@@ -11,7 +11,11 @@ public class Appconfig {
 
     @Bean
     public Actor actor(){
-        return new Actor();
+        Actor actor = new Actor();
+        actor.setAge(1);
+        actor.setGender("male");
+        actor.setName("newborn");
+        return actor;
     }
 
     @Bean

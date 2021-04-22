@@ -16,9 +16,6 @@ public class Main
 
         ApplicationContext ac =new AnnotationConfigApplicationContext(Appconfig.class);
         Actor actor = ac.getBean(Actor.class);
-        actor.setAge(1);
-        actor.setGender("male");
-        actor.setName("newborn");
         System.out.println(actor);
     }
 }
